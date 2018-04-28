@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title> My website</title>
+        <link rel="stylesheet" type = "text/css" href = "work.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+        <script src = "work.js"></script>
+    </head>
+
+
+    <body>
+       <h2 align = "center">A Web Page</h2>
+       <br/>
+       <div class="button-bar">
+            <a href="#" class="button prev">&laquo;Previous</a>
+            <a href="http://localhost:5000/success" class="button next">Next&raquo;</a>
+       </div>
+       <br>
+
+       <div class = "white-space1" ng-app="myApp" align = "center" ng-controller="myCtrl">
+             <form ng-controller = "myCtrl"  action = "http://localhost:5000/login"  method = "post">
+               <p>Enter your expression please:</p>
+               <p><input name = "name" type = "text" ng-model = "answer"></p>
+               <p><input type = "submit" value = "submit" ></p>
+             </form>
+      </div>
+
+    </body>
+</html>

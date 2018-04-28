@@ -1,0 +1,52 @@
+body  {
+          background-color: grey;
+      }
+.second-body {
+    background-color: grey;
+}
+
+a  {
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px;
+}
+
+
+a:hover  {
+    background-color: grey;
+    color: white
+
+}
+
+.previous {
+  
+    backgound-color: white;
+    color: grey;
+    border-radius: 5px;
+}
+
+.next {
+
+    background-color: white;
+    color: grey;
+    border-radius: 5px;
+}
+
+.round  {
+
+    border-radius: 50%;
+}
+
+.white-space  {
+
+    background-color: white;
+    color: black;
+    justify-content: center;
+}
+
+.white-space1 {
+    background-color: white;
+    color: black;
+    justify-content: center;
+}
+
