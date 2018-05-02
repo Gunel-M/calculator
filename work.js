@@ -1,5 +1,14 @@
 alert("Hi there and welcome to the website")
 
+
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("myBtn").click();
+    }
+})
+
 var app = angular.module('myApp', ["ngRoute"]);
       app.controller('myCtrl', function($scope, $http) {
           var expression = {"expression":""}
