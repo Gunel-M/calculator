@@ -21,10 +21,9 @@
        <div class = "white-space1" ng-app="myApp" align = "center" ng-controller="myCtrl">
              <form ng-controller = "myCtrl"  action = "http://localhost:5000/login"  method = "post">
                <p>Enter your expression please:</p>
-               <p><input name = "name" type = "text" ng-model = "answer"></p>
-               <p><input type = "submit" value = "submit" ></p>
+               <input name = "name" type = "text" ng-model = "answer" id = "myInput">
+               <p><input type = "submit" value = "submit" id = "myBtn" ></p>
              </form>
       </div>
-
     </body>
 </html>
