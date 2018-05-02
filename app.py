@@ -146,8 +146,7 @@ class Parser:
                 if decimal_found:
                     raise Exception(
                         "Found an extra period in a number at character " +
-                        str(self.index) +
-                        ". Are you European?")
+                        str(self.index))
                 decimal_found = True
                 strValue += '.'
             elif char in '0123456789':
@@ -161,11 +160,10 @@ class Parser:
                 raise Exception("Unexpected end found")
             else:
                 raise Exception(
-                    "I was expecting to find a number at character " +
+                    "A number was expected at character " +
                     str(self.index) +
-                    " but instead I found a '" +
-                    char +
-                    "'. What's up with that?")
+                    " instead of a '" +
+                    char)
 
         return float(strValue)
 
@@ -194,7 +192,6 @@ def evaluate(expression, vars={}):
 
 @app.route('/success/<name>')
 def success(name):
-    #return 'result is %d' %(evaluate(name))
     result = evaluate(name)
     return render_template("second.html", var1 = result)
 
